@@ -55,16 +55,3 @@ Run the development server:
 Bash
 npm run dev
 Open your browser: Navigate to http://localhost:5173
-
-📂 Project Structure
-Plaintext
-src/
-├── components/
-│   ├── AddTask.jsx      # Task creation & priority selection
-│   ├── Column.jsx       # Droppable column containers
-│   ├── TaskCard.jsx     # Draggable task items with move logic
-│   └── SearchBar.jsx    # Search filter implementation
-├── utils/
-│   └── localStorage.js  # Persistence logic [cite: 2025-08-24]
-├── App.jsx              # Main application logic & DndContext
-└── main.jsx             # Entry point
