@@ -1,0 +1,40 @@
+/* @import "tailwindcss";
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg,#6366f1,#8b5cf6,#a855f7);
+  background-attachment: fixed;
+} */
+
+
+
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  /* Your chosen gradient */
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7);
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glassmorphism utility for your Columns */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Smooth transitions for dragging states */
+.dragging {
+  opacity: 0.5;
+  scale: 1.05;
+  cursor: grabbing;
+}
